@@ -561,6 +561,7 @@ require('lazy').setup({
 
       require('mason-lspconfig').setup {
         handlers = {
+          rust_analyzer = function() end,
           function(server_name)
             local server = servers[server_name] or {}
             -- This handles overriding only values explicitly passed
